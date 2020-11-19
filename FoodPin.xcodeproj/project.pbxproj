@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0904632566047200F68F0C /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0904622566047200F68F0C /* Restaurant.swift */; };
 		4E3CBE0025539CB1002913BA /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CBDFF25539CB1002913BA /* RestaurantDetailViewController.swift */; };
 		4EE817632541277C008B828E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE817622541277C008B828E /* AppDelegate.swift */; };
 		4EE817652541277C008B828E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE817642541277C008B828E /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E0904622566047200F68F0C /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		4E3CBDFF25539CB1002913BA /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		4EE8175F2541277C008B828E /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE817622541277C008B828E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E09046425660F1B00F68F0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E3CBDFF25539CB1002913BA /* RestaurantDetailViewController.swift */,
+				4EE817762541293D008B828E /* RestaurantTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4E09046625660F5100F68F0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E0904622566047200F68F0C /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E09046725660F5900F68F0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EE8177825413599008B828E /* RestaurantTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4EE817562541277C008B828E = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +87,15 @@
 		4EE817612541277C008B828E /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				4E09046725660F5900F68F0C /* View */,
+				4E09046625660F5100F68F0C /* Model */,
+				4E09046425660F1B00F68F0C /* Controller */,
 				4EE817622541277C008B828E /* AppDelegate.swift */,
 				4EE817642541277C008B828E /* SceneDelegate.swift */,
 				4EE817682541277C008B828E /* Main.storyboard */,
 				4EE8176B2541277C008B828E /* Assets.xcassets */,
 				4EE8176D2541277C008B828E /* LaunchScreen.storyboard */,
 				4EE817702541277C008B828E /* Info.plist */,
-				4EE817762541293D008B828E /* RestaurantTableViewController.swift */,
-				4EE8177825413599008B828E /* RestaurantTableViewCell.swift */,
-				4E3CBDFF25539CB1002913BA /* RestaurantDetailViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -146,6 +173,7 @@
 			files = (
 				4EE8177925413599008B828E /* RestaurantTableViewCell.swift in Sources */,
 				4EE817632541277C008B828E /* AppDelegate.swift in Sources */,
+				4E0904632566047200F68F0C /* Restaurant.swift in Sources */,
 				4E3CBE0025539CB1002913BA /* RestaurantDetailViewController.swift in Sources */,
 				4EE817652541277C008B828E /* SceneDelegate.swift in Sources */,
 				4EE817772541293D008B828E /* RestaurantTableViewController.swift in Sources */,
