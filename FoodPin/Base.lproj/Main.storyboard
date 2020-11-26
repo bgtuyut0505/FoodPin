@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Rubik-Light.ttf">
+            <string>Rubik-Light</string>
+        </array>
         <array key="Rubik-Medium.ttf">
             <string>Rubik-Medium</string>
         </array>
@@ -120,8 +123,8 @@
                                                 <constraint firstAttribute="height" constant="350" id="li6-SD-Uo2"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-l2-UVg">
-                                            <rect key="frame" x="8" y="271.5" width="343" height="41.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-l2-UVg">
+                                            <rect key="frame" x="14" y="271.5" width="350" height="41.5"/>
                                             <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="35"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -150,12 +153,15 @@
                                         <constraint firstAttribute="bottom" secondItem="aLg-jR-xPG" secondAttribute="bottom" id="2fO-sO-eXj"/>
                                         <constraint firstItem="Aah-sY-hOS" firstAttribute="top" secondItem="HZX-Ww-7B6" secondAttribute="top" id="9MH-KX-CWg"/>
                                         <constraint firstItem="TOT-aZ-5QM" firstAttribute="centerY" secondItem="bGT-Mh-Hc2" secondAttribute="centerY" id="AeQ-57-Km5"/>
+                                        <constraint firstItem="TOT-aZ-5QM" firstAttribute="top" secondItem="ghk-l2-UVg" secondAttribute="bottom" constant="3" id="DNc-Ua-5Es"/>
                                         <constraint firstItem="TOT-aZ-5QM" firstAttribute="leading" secondItem="HZX-Ww-7B6" secondAttribute="leading" constant="14" id="GpM-2t-21C"/>
                                         <constraint firstItem="aLg-jR-xPG" firstAttribute="top" secondItem="HZX-Ww-7B6" secondAttribute="top" id="Kck-d8-5Hq"/>
                                         <constraint firstAttribute="bottom" secondItem="TOT-aZ-5QM" secondAttribute="bottom" constant="14" id="LXa-Ba-vSe"/>
+                                        <constraint firstAttribute="trailing" secondItem="ghk-l2-UVg" secondAttribute="trailing" constant="50" id="Rfr-nH-Mxr"/>
                                         <constraint firstAttribute="bottom" secondItem="Aah-sY-hOS" secondAttribute="bottom" id="Rgu-9h-z1Z"/>
                                         <constraint firstItem="TOT-aZ-5QM" firstAttribute="top" secondItem="ghk-l2-UVg" secondAttribute="bottom" constant="3" id="UKo-V7-5zB"/>
                                         <constraint firstAttribute="trailing" secondItem="aLg-jR-xPG" secondAttribute="trailing" id="lLV-xa-SdD"/>
+                                        <constraint firstItem="ghk-l2-UVg" firstAttribute="leading" secondItem="HZX-Ww-7B6" secondAttribute="leading" constant="14" id="rHS-0a-LFj"/>
                                         <constraint firstItem="Aah-sY-hOS" firstAttribute="leading" secondItem="HZX-Ww-7B6" secondAttribute="leading" id="u5t-a5-wlY"/>
                                         <constraint firstAttribute="trailing" secondItem="Aah-sY-hOS" secondAttribute="trailing" id="yL9-7T-8y4"/>
                                         <constraint firstItem="bGT-Mh-Hc2" firstAttribute="leading" secondItem="TOT-aZ-5QM" secondAttribute="trailing" constant="8" id="yTq-Sf-WPg"/>
@@ -176,19 +182,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="42.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cfb-M2-M8F">
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cfb-M2-M8F">
                                                     <rect key="frame" x="3" y="20" width="408" height="20.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lXY-2b-zx9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="SNh-nw-tod"/>
                                                                 <constraint firstAttribute="width" constant="20" id="mGJ-yC-RcL"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPc-7e-1Tu">
-                                                            <rect key="frame" x="30" y="0.0" width="378" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPc-7e-1Tu">
+                                                            <rect key="frame" x="30" y="2" width="378" height="17"/>
+                                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -214,9 +220,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="42.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vch-tJ-CTd">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vch-tJ-CTd">
                                                     <rect key="frame" x="3" y="20" width="408" height="18.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
