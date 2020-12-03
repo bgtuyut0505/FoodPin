@@ -23,6 +23,10 @@
 		4E7A65FB256F4414009E4ED4 /* RestaurantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A65FA256F4414009E4ED4 /* RestaurantDetailHeaderView.swift */; };
 		4E7A65FD256F5188009E4ED4 /* RestaurantDetailIconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A65FC256F5188009E4ED4 /* RestaurantDetailIconTextCell.swift */; };
 		4E7A65FF256F52B7009E4ED4 /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A65FE256F52B7009E4ED4 /* RestaurantDetailTextCell.swift */; };
+		4ED457E72578754800DD900C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED457E62578754800DD900C /* MapKit.framework */; };
+		4ED457E9257877B000DD900C /* RestaurantDetailSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED457E8257877B000DD900C /* RestaurantDetailSeparatorCell.swift */; };
+		4ED457EB257878E100DD900C /* RestaurantDetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED457EA257878E100DD900C /* RestaurantDetailMapCell.swift */; };
+		4ED457ED257882F100DD900C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED457EC257882F100DD900C /* MapViewController.swift */; };
 		4EE817632541277C008B828E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE817622541277C008B828E /* AppDelegate.swift */; };
 		4EE817652541277C008B828E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE817642541277C008B828E /* SceneDelegate.swift */; };
 		4EE8176A2541277C008B828E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE817682541277C008B828E /* Main.storyboard */; };
@@ -49,6 +53,10 @@
 		4E7A65FA256F4414009E4ED4 /* RestaurantDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailHeaderView.swift; sourceTree = "<group>"; };
 		4E7A65FC256F5188009E4ED4 /* RestaurantDetailIconTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailIconTextCell.swift; sourceTree = "<group>"; };
 		4E7A65FE256F52B7009E4ED4 /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
+		4ED457E62578754800DD900C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4ED457E8257877B000DD900C /* RestaurantDetailSeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailSeparatorCell.swift; sourceTree = "<group>"; };
+		4ED457EA257878E100DD900C /* RestaurantDetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailMapCell.swift; sourceTree = "<group>"; };
+		4ED457EC257882F100DD900C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4EE8175F2541277C008B828E /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE817622541277C008B828E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EE817642541277C008B828E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED457E72578754800DD900C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +85,7 @@
 			children = (
 				4E3CBDFF25539CB1002913BA /* RestaurantDetailViewController.swift */,
 				4EE817762541293D008B828E /* RestaurantTableViewController.swift */,
+				4ED457EC257882F100DD900C /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,6 +105,8 @@
 				4E7A65FA256F4414009E4ED4 /* RestaurantDetailHeaderView.swift */,
 				4E7A65FC256F5188009E4ED4 /* RestaurantDetailIconTextCell.swift */,
 				4E7A65FE256F52B7009E4ED4 /* RestaurantDetailTextCell.swift */,
+				4ED457E8257877B000DD900C /* RestaurantDetailSeparatorCell.swift */,
+				4ED457EA257878E100DD900C /* RestaurantDetailMapCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,11 +137,20 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		4ED457E52578754800DD900C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ED457E62578754800DD900C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4EE817562541277C008B828E = {
 			isa = PBXGroup;
 			children = (
 				4EE817612541277C008B828E /* FoodPin */,
 				4EE817602541277C008B828E /* Products */,
+				4ED457E52578754800DD900C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,15 +261,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED457EB257878E100DD900C /* RestaurantDetailMapCell.swift in Sources */,
 				4EE8177925413599008B828E /* RestaurantTableViewCell.swift in Sources */,
 				4E7A65FF256F52B7009E4ED4 /* RestaurantDetailTextCell.swift in Sources */,
 				4EE817632541277C008B828E /* AppDelegate.swift in Sources */,
 				4E0904632566047200F68F0C /* Restaurant.swift in Sources */,
 				4E7A65FD256F5188009E4ED4 /* RestaurantDetailIconTextCell.swift in Sources */,
 				4E7A65FB256F4414009E4ED4 /* RestaurantDetailHeaderView.swift in Sources */,
+				4ED457ED257882F100DD900C /* MapViewController.swift in Sources */,
 				4E3CBE0025539CB1002913BA /* RestaurantDetailViewController.swift in Sources */,
 				4EE817652541277C008B828E /* SceneDelegate.swift in Sources */,
 				4EE817772541293D008B828E /* RestaurantTableViewController.swift in Sources */,
+				4ED457E9257877B000DD900C /* RestaurantDetailSeparatorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
